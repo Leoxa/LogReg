@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    //email
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegEmail"
+        android:text="Email"
+        android:inputType="textEmailAddress"/>
+
+    //uname
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegUname"
+        android:text="Felhasználónév"
+        android:layout_below="@+id/etRegEmail"/>
+
+
+    //pwd
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegPassword"
+        android:text="Jelszó"
+        android:layout_below="@+id/etRegUname"
+        android:inputType="textPassword"/>
+
+
+    //fname
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegFname"
+        android:text="Teljes Név"
+        android:layout_below="@+id/etRegPassword"/>
+
+    //reg btn
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegReg"
+        android:text="BEJELENTKEZÉS"
+        android:layout_below="@+id/etRegFname"/>
+
+    //back
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        android:text="Vissza"
+        android:layout_below="@+id/btnRegReg"/>
+
+</RelativeLayout>
